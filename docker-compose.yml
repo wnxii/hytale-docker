@@ -9,6 +9,7 @@ services:
       - "5520:5520/udp"
     volumes:
       - hytale-data:/hytale
+      - hytale-credentials:/root
       # Allows to persist server authorization with /auth persistence Encrypted
       # - /etc/machine-id:/etc/machine-id:ro
     environment:
@@ -31,3 +32,4 @@ services:
 
 volumes:
   hytale-data:
+  hytale-credentials:
