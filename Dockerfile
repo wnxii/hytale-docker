@@ -34,7 +34,7 @@ RUN useradd -m -d /hytale -u 1000 hytale && \
     mkdir -p /hytale/Server /hytale/backups && \
     chown -R hytale:hytale /hytale
 
-USER hytale
+# USER hytale
 WORKDIR /hytale
 
 # -------------------------------
